@@ -57,6 +57,7 @@ var init = function (window) {
            for (var i = 0; i <= drawCircle;i++){
             physikz.updatePosition(eachCircle) 
             game.checkCirclePosition(eachCircle)
+            var eachcircle = [i]
            }
             
         }
