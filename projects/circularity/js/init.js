@@ -55,9 +55,12 @@ var init = function (window) {
          
 
             // TODO 9 : Iterate over the array
+            //your stop condition should stop when it reaches the end of the circles array
            for (var i = 0; i <= loops;i++){
+            
             physikz.updatePosition(eachCircle) 
             game.checkCirclePosition(eachCircle)
+            //line 64 should be on line 60 and it should be named using camelCasing
             var eachcircle = circles[i]
            }
             
@@ -77,9 +80,11 @@ var init = function (window) {
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
             if ( circle.x < 0){
+                //if it's already at zero we want it to go to the opposite side (see lines 77 - 79)
                 circle.x = 0;
             }
             if (circle.y < 0){
+                //if it's already at zero we want it to go to the opposite side (see lines 77 - 79)
                 circle.y = 0
             }
             if (circle.y > canvas.height){
